@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundos Sin Sol - Contacto</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-titulo">
+            <h1>Mundos Sin Sol</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contenido.html">¿Qué son?</a></li>
+                <li><a href="informacion.html">Curiosidades</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contacto-container">
+            <div class="seccion-titulo">
+                <h2>CONTACTO</h2>
+                <p class="subtitulo">¿TIENES ALGUNA DUDA SOBRE LOS PLANETAS HUÉRFANOS?</p>
+                <p>ESCRÍBENOS</p>
+            </div>
+
+            <form action="#" method="get" onsubmit="event.preventDefault(); alert('¡Mensaje enviado correctamente!');">
+                <div class="form-grupo">
+                    <input type="text" class="input-gradiente" placeholder="Nombre:" required>
+                </div>
+
+                <div class="form-grupo">
+                    <input type="email" class="input-gradiente" placeholder="Correo:" required>
+                </div>
+
+                <div class="form-grupo">
+                    <textarea class="input-gradiente" placeholder="Mensaje:" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit btn-enviar-verde">ENVIAR</button>
+            </form>
+        </div>
+
+        <div class="nav-botones">
+            <a href="informacion.html" class="btn-nav">&lt; BACK</a>
+            <a href="index.html" class="btn-nav">INICIO &gt;</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>¡VISÍTANOS PRONTO!</p>
+    </footer>
+
+</body>
+</html>
