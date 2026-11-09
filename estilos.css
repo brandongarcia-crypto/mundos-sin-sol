@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0d17;
+    /* ESPACIO PARA TU IMAGEN DE FONDO */
+    background-image: url('../imagenes/fondo.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: rgba(10, 10, 25, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-titulo h1 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    color: #cfd8dc;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.activo {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid #a855f7;
+}
+
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(18, 18, 38, 0.65);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-section h2 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.pregunta {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.btn-explorar, .btn-submit {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #ec4899, #8b5cf6);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.btn-nav {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.seccion-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-planetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-planeta {
+    background: rgba(15, 23, 42, 0.85);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.imagen-placeholder {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background-color: #1e293b;
+    display: block;
+}
+
+.tarjeta-planeta h3 {
+    margin: 15px 0 5px 0;
+}
+
+.puntos {
+    color: #64748b;
+    letter-spacing: 3px;
+}
+
+.grid-datos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-dato {
+    background: rgba(30, 41, 59, 0.75);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #a855f7;
+}
+
+.tarjeta-dato h3 {
+    margin-bottom: 8px;
+}
+
+.contacto-container {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-grupo {
+    margin-bottom: 18px;
+}
+
+.input-gradiente {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ec4899, #f97316);
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-gradiente::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+}
+
+textarea.input-gradiente {
+    border-radius: 20px;
+    height: 90px;
+    resize: vertical;
+}
+
+.btn-enviar-verde {
+    background: #10b981;
+    color: #ffffff;
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(10, 10, 25, 0.9);
+    color: #94a3b8;
+    margin-top: auto;
+}
+
+/* ===== AGREGADO PARA LA RÚBRICA ===== */
+
+/* MARQUESINA 1 - INICIO */
+.marquesina-1 {
+    display: block;
+    background: linear-gradient(90deg, #ec4899, #8b5cf6);
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+/* MARQUESINA 2 - CONTACTO */
+.marquesina-2 {
+    display: block;
+    background: linear-gradient(90deg, #f97316, #ec4899);
+    color: #ffffff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* TABLA AVANZADA */
+.titulo-tabla {
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin: 35px 0 15px 0;
+}
+
+.tabla-planetas {
+    width: 100%;
+    margin: 0 auto 10px auto;
+    border-collapse: collapse;
+    background: rgba(15, 23, 42, 0.9);
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.tabla-planetas th,
+.tabla-planetas td {
+    border: 2px solid #a855f7;
+    padding: 12px;
+}
+
+.tabla-planetas th {
+    background: #7c3aed;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.tabla-planetas td {
+    background: rgba(30, 41, 59, 0.75);
+}
+
+
